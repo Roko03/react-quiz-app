@@ -1,7 +1,11 @@
-// import styles from "./app.module.scss";
+import "./app.scss";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <h1>Ej</h1>
+    </>
+  );
 }
 
 export default App;
