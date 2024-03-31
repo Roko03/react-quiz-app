@@ -1,0 +1,38 @@
+@import "../../styles/main.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(18);
+
+  select {
+    width: 100%;
+    font-size: rem(18);
+    padding: rem(10) rem(20);
+    background-color: #f8f8f8;
+    border: 1px solid rgba(#101010, 0.3);
+    border-radius: 0.25rem;
+    color: #101010;
+    cursor: pointer;
+    font-family: var(--poppins);
+    outline: none;
+  }
+
+  &__button {
+    padding: rem(14) rem(28);
+    font-size: rem(18);
+    font-family: var(--poppins);
+    font-weight: 500;
+    background-color: #029611;
+    align-self: center;
+    cursor: pointer;
+    color: #f8f8f8;
+    border-radius: rem(10);
+    border: none;
+    outline: none;
+  }
+
+  &__button:disabled {
+    background-color: rgb(194, 4, 4);
+  }
+}

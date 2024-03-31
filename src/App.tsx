@@ -1,9 +1,10 @@
 import "./app.scss";
+import LandingPageSection from "./components/langing-page/LandingPageSection";
 
 function App() {
   return (
     <>
-      <h1>Ej</h1>
+      <LandingPageSection />
     </>
   );
 }
