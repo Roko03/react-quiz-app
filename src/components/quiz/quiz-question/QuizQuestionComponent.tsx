@@ -16,6 +16,7 @@ const QuizQuestionComponent: React.FC<QuizQuestionComponentProps> = ({
   const answers: Answer[] = [
     { title: question.correct_answer, isCorrect: true },
   ];
+  const parser = new DOMParser();
 
   question.incorrect_answers.forEach((ans) => {
     answers.push({ title: ans, isCorrect: false });
@@ -34,12 +35,24 @@ const QuizQuestionComponent: React.FC<QuizQuestionComponentProps> = ({
       <h2>
         Pitanje {currQuestion} od {numbOfQuestions}
       </h2>
-      <p>{question.question}</p>
+      <p>
+        {
+          parser.parseFromString(
+            `<!doctype html><body>${question.question}`,
+            "text/html"
+          ).body.textContent
+        }
+      </p>
       <ul className={styles.question__answers}>
         {answers.map((answer, index) => {
           return (
             <li key={index} onClick={() => nextQuestion(answer.title, answers)}>
-              {answer.title}
+              {
+                parser.parseFromString(
+                  `<!doctype html><body>${answer.title}`,
+                  "text/html"
+                ).body.textContent
+              }
             </li>
           );
         })}

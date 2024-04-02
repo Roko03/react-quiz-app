@@ -7,9 +7,18 @@ interface QuizResultComponentProps {
 const QuizResultComponent: React.FC<QuizResultComponentProps> = ({
   result,
 }) => {
+  const parser = new DOMParser();
+
   return (
     <div className={styles.result}>
-      <p>{result.question}</p>
+      <p>
+        {
+          parser.parseFromString(
+            `<!doctype html><body>${result.question}`,
+            "text/html"
+          ).body.textContent
+        }
+      </p>
       <ul className={styles.result__answers}>
         {result.answers.map((answer, index) => {
           return (
@@ -25,7 +34,12 @@ const QuizResultComponent: React.FC<QuizResultComponentProps> = ({
                   : ""
               }`}
             >
-              {answer.title}
+              {
+                parser.parseFromString(
+                  `<!doctype html><body>${answer.title}`,
+                  "text/html"
+                ).body.textContent
+              }
             </li>
           );
         })}
