@@ -10,6 +10,20 @@
   justify-content: center;
   gap: rem(24);
 
+  h1 {
+    font-size: rem(24);
+  }
+
+  h2 {
+    font-size: rem(18);
+  }
+
+  .link {
+    color: #1b007e;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
   .question_list {
     display: flex;
     flex-direction: column;
