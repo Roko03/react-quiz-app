@@ -20,7 +20,7 @@ const QuizQuestionComponent: React.FC<QuizQuestionComponentProps> = ({
   const [answers, setAnswers] = useState<Answer[]>([]);
   const parser = new DOMParser();
 
-  const randomAnswers = () => {
+  const generateAnswers = () => {
     const arr: Answer[] = [
       { title: question.correct_answer, isCorrect: true },
       ...question.incorrect_answers.map((ans) => ({
@@ -43,7 +43,7 @@ const QuizQuestionComponent: React.FC<QuizQuestionComponentProps> = ({
   };
 
   useEffect(() => {
-    randomAnswers();
+    generateAnswers();
   }, [question]);
 
   return (
