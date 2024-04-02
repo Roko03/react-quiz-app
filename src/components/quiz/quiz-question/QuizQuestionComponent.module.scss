@@ -1,0 +1,50 @@
+@import "../../../styles/main.scss";
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(14);
+
+  h3 {
+    font-size: rem(16);
+  }
+
+  p {
+    font-size: rem(28);
+  }
+
+  &__answers {
+    margin-top: rem(18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: rem(24);
+    width: 100%;
+
+    li {
+      text-align: center;
+      padding: rem(14) rem(24);
+      font-size: rem(18);
+      border: 1px solid #101010;
+      border-radius: rem(10);
+      width: 100%;
+      max-width: rem(350);
+      cursor: pointer;
+    }
+
+    .correct {
+      background-color: #029611;
+      color: #f8f8f8;
+      border: none;
+    }
+
+    .wrong {
+      border: none;
+      color: #f8f8f8;
+      background-color: rgb(194, 4, 4);
+    }
+  }
+}

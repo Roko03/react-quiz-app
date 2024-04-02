@@ -1,4 +1,4 @@
-import QuizPageSection from "../components/quiz-page/QuizPageSection";
+import QuizPageSection from "../components/quiz/quiz-page/QuizPageSection";
 
 const QuizPage = () => {
   return (
