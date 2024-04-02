@@ -1,7 +1,12 @@
-// import styles from "./app.module.scss";
+import "./app.scss";
+import LandingPageSection from "./components/langing-page/LandingPageSection";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <LandingPageSection />
+    </>
+  );
 }
 
 export default App;
