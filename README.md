@@ -43,6 +43,7 @@ Make sure you have the following installed on your computer:
 - [git](https://git-scm.com/)
 - [node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/)
+- [react-router](https://reactrouter.com/en/main)
 
 Clone the repository
 
