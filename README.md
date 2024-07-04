@@ -1,30 +1,68 @@
-# React + TypeScript + Vite
+# React Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[React Quiz App](./public/react-quiz-app.gif)
 
-Currently, two official plugins are available:
+[Video of how it works](https://drive.google.com/file/d/1enGtmcRHALDfmspq1UC8lOLgw26doECR/view?usp=sharing)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the Quiz App, where you need to choose a category and quiz level to get started with a quiz. You need to answer ten questions with four answers and after the 10th question, you get a result page with several correctly answered questions and a list of questions with their answers. Questions from the chosen category with their answers are from [Trivia API](https://opentdb.com/api_config.php). 
 
-## Expanding the ESLint configuration
+## Live demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You can view the live demo of the project [here](https://react-quiz-app-roko.netlify.app/).
 
-- Configure the top-level `parserOptions` property like this:
+## Summary
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+For this project, I utilized a React template that I created, incorporating a well-organized SCSS structure where each component has its folder.
+
+**Design and Styling**
+
+I defined typography and the main font which is [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) from [Google fonts](https://fonts.google.com/).
+
+**TypeScript Integration**
+
+I created TypeScript types for the data used in the components.
+
+**Challenges and Solutions**
+
+The most challenging part of the project was implementing API and configuring [React Router](https://reactrouter.com/en/main). I chose the [Trivia API](https://opentdb.com/api_config.php) for its variety of categories, difficulty levels, and question types (true/false or multiple choice).  Configuring React Router turned out to be simpler than expected, allowing me to define and implement routes efficiently. I'm proud of the project's structure. I created functions to fetch categories and quiz data based on the selected category and difficulty level. I organized them in a folder and invoked them in components.
+
+
+## Project Structure
+- **Folders and Files:** The project follows modular structure for folder with components, pages, library and utilities
+- **Technologies Used:** React.js, SCSS, TypeScript, React Router
+- **Trivia API:** - Questions and answers are managed via the Trivia API, an online service providing trivia across various categories and difficulty levels
+- **Considerations:** - The main focus for this project is to understand how to implement API and make everything optimized with good types of data
+
+## Time Spent
+
+I need 20-25 hours of work to make this project.
+## How to Use
+
+Make sure you have the following installed on your computer:
+
+- [git](https://git-scm.com/)
+- [node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
+
+Clone the repository
+
+```bash
+git clone https://github.com/Roko03/react-quiz-app.git
+cd react-quiz-app
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Installation
+
+```bash
+npm i
+#or
+npm install
+```
+
+Running the Project
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the project
