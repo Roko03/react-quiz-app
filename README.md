@@ -1,6 +1,6 @@
 # React Quiz App
 
-[React Quiz App](./public/react-quiz-app.gif)
+(./public/react-quiz-app.gif)
 
 [Video of how it works](https://drive.google.com/file/d/1enGtmcRHALDfmspq1UC8lOLgw26doECR/view?usp=sharing)
 
