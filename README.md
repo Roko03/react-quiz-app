@@ -30,8 +30,8 @@ The most challenging part of the project was implementing API and configuring [R
 ## Project Structure
 - **Folders and Files:** The project follows modular structure for folder with components, pages, library and utilities
 - **Technologies Used:** React.js, SCSS, TypeScript, React Router
-- **Trivia API:** - Questions and answers are managed via the Trivia API, an online service providing trivia across various categories and difficulty levels
-- **Considerations:** - The main focus for this project is to understand how to implement API and make everything optimized with good types of data
+- **Trivia API:** Questions and answers are managed via the Trivia API, an online service providing trivia across various categories and difficulty levels
+- **Considerations:** The main focus for this project is to understand how to implement API and make everything optimized with good types of data
 
 ## Time Spent
 
